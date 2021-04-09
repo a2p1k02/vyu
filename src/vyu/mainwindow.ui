@@ -18,14 +18,14 @@
     <item row="1" column="0">
      <widget class="QPushButton" name="openImage">
       <property name="text">
-       <string>Открыть...</string>
+       <string>Open...</string>
       </property>
      </widget>
     </item>
     <item row="1" column="1">
      <widget class="QPushButton" name="quitBtn">
       <property name="text">
-       <string>Выход</string>
+       <string>Exit</string>
       </property>
      </widget>
     </item>
