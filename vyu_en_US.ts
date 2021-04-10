@@ -4,18 +4,18 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="mainwindow.ui" line="14"/>
-        <source>MainWindow</source>
+        <location filename="src/vyu/mainwindow.ui" line="14"/>
+        <source>vyu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="21"/>
-        <source>Открыть...</source>
+        <location filename="src/vyu/mainwindow.ui" line="21"/>
+        <source>Open...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="28"/>
-        <source>Выход</source>
+        <location filename="src/vyu/mainwindow.ui" line="28"/>
+        <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
