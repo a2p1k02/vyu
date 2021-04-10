@@ -27,7 +27,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets LinguistTools REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools REQUIRED)
 
-set(TS_FILES vyu_en_US.ts)
+set(TS_FILES vyu_en_US.ts vyu_ru_RU.ts)
 
 set(PROJECT_SOURCES
         src/main.cpp
