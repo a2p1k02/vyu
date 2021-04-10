@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "vyu/mainwindow.h"
 
 #include <QApplication>
 
