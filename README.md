@@ -1,2 +1,4 @@
 # vyu
-My crossplatform lightweight Image Viewer
+## Vyu is crossplatform lightweight Image Viewer
+
+<br>
