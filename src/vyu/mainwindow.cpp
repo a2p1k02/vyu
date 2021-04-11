@@ -23,5 +23,5 @@ void MainWindow::showImage()
 {
     QPixmap* img = new QPixmap(getFilePath());
     ui->imageViewer->setScaledContents(true);
-    ui->imageViewer->setPixmap(img->scaled(800, 600));
+    ui->imageViewer->setPixmap(img->scaled(782, 555));
 }

@@ -22,12 +22,12 @@
 <context>
     <name>QFileDialog</name>
     <message>
-        <location filename="src/vyu/mainwindow.cpp" line="6"/>
+        <location filename="src/vyu/mainwindow.cpp" line="18"/>
         <source>Open file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vyu/mainwindow.cpp" line="6"/>
+        <location filename="src/vyu/mainwindow.cpp" line="18"/>
         <source>Image Files (*.png *.jpg *.bmp)</source>
         <translation type="unfinished"></translation>
     </message>
