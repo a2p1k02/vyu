@@ -12,5 +12,7 @@ I hope this app will become standard app in your practice.
 4. Enjoy
 
 ### Screenshots
+Start screen
 ![изображение](https://user-images.githubusercontent.com/35633190/114293702-e3aad280-9aa0-11eb-82a2-7f2087fffb75.png)
+Vyu after open picture
 ![изображение](https://user-images.githubusercontent.com/35633190/114293716-f7eecf80-9aa0-11eb-8c68-676ddbf13be8.png)
