@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QDesktopServices>
 #include <QFileDialog>
 
 QT_BEGIN_NAMESPACE
@@ -21,7 +22,5 @@ private:
     Ui::MainWindow *ui;
 private slots:
     void showImage();
-
-
 };
 #endif // MAINWINDOW_H

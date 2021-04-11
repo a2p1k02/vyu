@@ -9,12 +9,12 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vyu/mainwindow.ui" line="21"/>
+        <location filename="src/vyu/mainwindow.ui" line="28"/>
         <source>Open...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/vyu/mainwindow.ui" line="28"/>
+        <location filename="src/vyu/mainwindow.ui" line="21"/>
         <source>Exit</source>
         <translation type="unfinished"></translation>
     </message>
