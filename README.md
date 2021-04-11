@@ -2,7 +2,8 @@
 ### Vyu is crossplatform lightweight Image Viewer
 
 ## Lyrics:
-I wrote this application because I was not happy with the performance of the "photography" application on Windows 10. I used my little knowledge of C ++ and Qt. <br>
+I wrote this application because I was not happy with the performance of the "photography" application on Windows 10. <br>
+I used my little knowledge of C ++ and Qt. <br>
 Hopefully this application will become a standard application in your practice.
 
 ## How do this:
