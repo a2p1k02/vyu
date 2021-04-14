@@ -15,8 +15,7 @@ MainWindow::~MainWindow()
 
 QString MainWindow::getFilePath()
 {
-    QString fileName = QFileDialog::getOpenFileName(this, QFileDialog::tr("Open file"), "C:/", QFileDialog::tr("Image Files (*.png *.jpg *.bmp)"));
-    return fileName;
+    return QFileDialog::getOpenFileName(this, QFileDialog::tr("Open file"), "C:/", QFileDialog::tr("Image Files (*.png *.jpg *.bmp)"));
 }
 
 void MainWindow::showImage()
