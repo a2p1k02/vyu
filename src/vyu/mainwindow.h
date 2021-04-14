@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QDesktopServices>
 #include <QFileDialog>
 
 QT_BEGIN_NAMESPACE
