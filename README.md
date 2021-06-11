@@ -1,4 +1,4 @@
-### Vyu is crossplatform lightweight Image Viewer
+# Vyu is crossplatform lightweight Image Viewer
 
 ## Lyrics:
 I wrote this application because I was not happy with the performance of the "photography" application on Windows 10. <br>
