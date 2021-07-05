@@ -12,11 +12,11 @@ Hopefully this application will become a standard application in your practice.
 4. Enjoy
 
 ## Screenshots
-**Start screen**
+***Start screen***
 <br>
 ![изображение](https://user-images.githubusercontent.com/35633190/124517539-e2155000-ddec-11eb-82a1-c61c693bcf4b.png)
 <br>
-**Vyu after open picture**
+***Vyu after open picture***
 <br>
 ![изображение](https://user-images.githubusercontent.com/35633190/124517560-f1949900-ddec-11eb-86a9-3f9c4b6c12bc.png)
 )
