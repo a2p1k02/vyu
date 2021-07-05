@@ -14,9 +14,10 @@ Hopefully this application will become a standard application in your practice.
 ## Screenshots
 **Start screen**
 <br>
-![изображение](https://user-images.githubusercontent.com/35633190/114293702-e3aad280-9aa0-11eb-82a2-7f2087fffb75.png)
+![изображение](https://user-images.githubusercontent.com/35633190/124517539-e2155000-ddec-11eb-82a1-c61c693bcf4b.png)
 <br>
 **Vyu after open picture**
 <br>
-![изображение](https://user-images.githubusercontent.com/35633190/114293716-f7eecf80-9aa0-11eb-8c68-676ddbf13be8.png)
+![изображение](https://user-images.githubusercontent.com/35633190/124517560-f1949900-ddec-11eb-86a9-3f9c4b6c12bc.png)
+)
 <br>
