@@ -5,11 +5,10 @@ I wrote this application because I was not happy with the performance of the "ph
 I used my little knowledge of C++ and Qt. <br>
 Hopefully this application will become a standard application in your practice.
 
-## How do this:
-1. Download last version my programm from Release block
-2. Unzip archive to the new folder
-3. Run vyu.exe in new folder
-4. Enjoy
+## How to build:
+1. Install Qt5 (ex. for Arch Linux ```sudo pacman -S qt5```
+2. Build project: ```mkdir build && cd build && cmake .. && make```
+3. Execute: ```./vyu```
 
 ## Screenshots
 ***Start screen***
