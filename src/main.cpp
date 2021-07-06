@@ -1,5 +1,6 @@
 #include "vyu/mainwindow.h"
 #include <QApplication>
+#include <QStyle>
 #include <QCommandLineParser>
 
 int main(int argc, char *argv[]) {

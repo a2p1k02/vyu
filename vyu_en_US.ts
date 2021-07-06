@@ -123,16 +123,16 @@
     </message>
     <message>
         <location filename="src/vyu/mainwindow.cpp" line="89"/>
-        <source>&lt;p&gt;&lt;center&gt;&lt;img src=&apos;:/app/icon/src/vyu/icon/eye.svg&apos;&gt;&lt;/center&gt;&lt;/p&gt;&lt;p&gt;&lt;center&gt;Vyu is Open Source lightweight image viewer was made with GPL V3 License by a2p1k02&lt;/center&gt;&lt;/p&gt;&lt;br&gt;&lt;a link href=&apos;https://github.com/a2p1k02/vyu&apos;&gt;&lt;center&gt;Source Code&lt;/center&gt;&lt;/a&gt;</source>
+        <source>&lt;p&gt;&lt;center&gt;Vyu is Open Source lightweight image viewer was made with GPL V3 License by a2p1k02&lt;/center&gt;&lt;/p&gt;&lt;br&gt;&lt;a link href=&apos;https://github.com/a2p1k02/vyu&apos;&gt;&lt;center&gt;Source Code&lt;/center&gt;&lt;/a&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/main.cpp" line="14"/>
+        <location filename="src/main.cpp" line="15"/>
         <source>[file]</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="src/main.cpp" line="14"/>
+        <location filename="src/main.cpp" line="15"/>
         <source>Image file to open</source>
         <translation type="unfinished"></translation>
     </message>

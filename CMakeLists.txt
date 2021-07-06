@@ -27,6 +27,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets LinguistTools REQUIRED)
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools REQUIRED)
 
+qt5_add_resources(VYU_RESOURCES resources.qrc)
+
 set(TS_FILES vyu_en_US.ts vyu_ru_RU.ts)
 
 set(PROJECT_SOURCES
@@ -47,7 +49,7 @@ else()
     if(ANDROID)
         add_library(vyu SHARED ${PROJECT_SOURCES})
     else()
-        add_executable(vyu ${PROJECT_SOURCES} )
+        add_executable(vyu ${PROJECT_SOURCES} ${VYU_RESOURCES})
     endif()
 
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})

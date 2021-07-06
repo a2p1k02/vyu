@@ -86,6 +86,6 @@ void MainWindow::on_actionZoom_Reset_triggered() {
 }
 
 void MainWindow::on_actionAbout_triggered() {
-    QMessageBox::about(this, tr("About vyu"), tr("<p><center><img src=':/app/icon/src/vyu/icon/eye.svg'></center></p><p><center>Vyu is Open Source lightweight image viewer was made with GPL V3 License by a2p1k02</center></p><br><a link href='https://github.com/a2p1k02/vyu'><center>Source Code</center></a>"));
+    QMessageBox::about(this, tr("About vyu"), tr("<p><center>Vyu is Open Source lightweight image viewer was made with GPL V3 License by a2p1k02</center></p><br><a link href='https://github.com/a2p1k02/vyu'><center>Source Code</center></a>"));
 }
 
