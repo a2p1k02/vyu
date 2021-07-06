@@ -1,10 +1,12 @@
 #include "vyu/mainwindow.h"
-#ifdef _WIN32
-    #include <Windows.h>
-#endif
 #include <QApplication>
 #include <QStyle>
 #include <QCommandLineParser>
+
+#ifdef _WIN32
+    #include <Windows.h>
+#endif
+
 
 int main(int argc, char *argv[]) {
     QApplication vyu(argc, argv);
