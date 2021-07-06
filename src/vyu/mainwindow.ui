@@ -15,7 +15,7 @@
   </property>
   <property name="windowIcon">
    <iconset resource="../../resources.qrc">
-    <normaloff>:/app/icon/src/vyu/icon/eye.png</normaloff>:/app/icon/src/vyu/icon/eye.png</iconset>
+    <normaloff>:/app/icon/src/vyu/icon/eye.svg</normaloff>:/app/icon/src/vyu/icon/eye.svg</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -50,6 +50,7 @@
     </property>
     <addaction name="actionZoom_In"/>
     <addaction name="actionZoom_Out"/>
+    <addaction name="actionZoom_Reset"/>
    </widget>
    <widget class="QMenu" name="menuAbout">
     <property name="title">
@@ -63,27 +64,50 @@
   </widget>
   <action name="actionOpen">
    <property name="text">
-    <string>Open..</string>
+    <string>Open...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
    </property>
   </action>
   <action name="actionExit">
    <property name="text">
     <string>Exit</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
   </action>
   <action name="actionZoom_In">
    <property name="text">
     <string>Zoom In</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+=</string>
    </property>
   </action>
   <action name="actionZoom_Out">
    <property name="text">
     <string>Zoom Out</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
   </action>
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+/</string>
+   </property>
+  </action>
+  <action name="actionZoom_Reset">
+   <property name="text">
+    <string>Zoom Reset</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
    </property>
   </action>
  </widget>

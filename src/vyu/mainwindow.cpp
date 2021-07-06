@@ -8,7 +8,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
-
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
 }
@@ -18,20 +17,13 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::zoomIn() {
-
+    zoomImage(1.15);
     std::cout << "Zoom In" << std::endl; //Debug function
 }
 
 void MainWindow::zoomOut() {
-
+    zoomImage(0.8);
     std::cout << "Zoom Out" << std::endl; //Debug function
-}
-
-void MainWindow::keyboardZoom(QKeyEvent* event) {
-    if (event->key() == Qt::Key_Control && event->key() == Qt::Key_Plus)
-        zoomIn();
-    else if (event->key() == Qt::Key_Control && event->key() == Qt::Key_Minus)
-        zoomOut();
 }
 
 QString MainWindow::getFilePath() {
@@ -45,8 +37,14 @@ void MainWindow::showImage() {
     ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width(), ui->imageViewer->height(), Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
 }
 
-void MainWindow::createAboutDialog() {
-    QMessageBox::about(this, tr("About vyu"), tr("<p>This application was made with GPL V3 License by a2p1k02</p> <p>https://github.com/a2p1k02</p>"));
+void MainWindow::zoomImage(double factor) {
+    scaleFactor *= factor;
+    ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width() * scaleFactor, ui->imageViewer->height() * scaleFactor, Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
+}
+
+void MainWindow::zoomReset() {
+    ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width(), ui->imageViewer->height(), Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
+    scaleFactor = 1;
 }
 
 void MainWindow::on_actionOpen_triggered() {
@@ -65,7 +63,11 @@ void MainWindow::on_actionZoom_Out_triggered() {
     zoomOut();
 }
 
+void MainWindow::on_actionZoom_Reset_triggered() {
+    zoomReset();
+}
+
 void MainWindow::on_actionAbout_triggered() {
-    createAboutDialog();
+    QMessageBox::about(this, tr("About vyu"), tr("<p><center><img src=':/app/icon/src/vyu/icon/eye.svg'></center></p><p><center>Vyu is Open Source lightweight image viewer was made with GPL V3 License by a2p1k02</center></p><br><a link href='https://github.com/a2p1k02/vyu'><center>Source Code</center></a>"));
 }
 

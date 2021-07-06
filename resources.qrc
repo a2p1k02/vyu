@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/app/icon">
-        <file>src/vyu/icon/eye.png</file>
+        <file>src/vyu/icon/eye.svg</file>
     </qresource>
 </RCC>

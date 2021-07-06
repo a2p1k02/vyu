@@ -19,16 +19,19 @@ private:
     Ui::MainWindow* ui;
     QString getFilePath();
     QPixmap* img;
+
+    double scaleFactor = 1;
 private slots:
     void showImage();
+    void zoomImage(double factor);
+    void zoomReset();
     void zoomIn();
     void zoomOut();
-    void keyboardZoom(QKeyEvent* event);
-    void createAboutDialog();
     void on_actionOpen_triggered();
     void on_actionExit_triggered();
     void on_actionZoom_In_triggered();
     void on_actionZoom_Out_triggered();
     void on_actionAbout_triggered();
+    void on_actionZoom_Reset_triggered();
 };
 #endif // MAINWINDOW_H

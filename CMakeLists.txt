@@ -45,13 +45,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
 else()
     if(ANDROID)
-        add_library(vyu SHARED
-            ${PROJECT_SOURCES}
-        )
+        add_library(vyu SHARED ${PROJECT_SOURCES})
     else()
-        add_executable(vyu
-            ${PROJECT_SOURCES}
-        )
+        add_executable(vyu ${PROJECT_SOURCES} )
     endif()
 
     qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
