@@ -1,7 +1,8 @@
 #include <iostream>
 #include <QFileDialog>
 #include <QApplication>
-#include <QKeyEvent>
+#include <QScrollBar>
+#include <QScrollArea>
 #include <QMessageBox>
 #include <QResizeEvent>
 #include <QWidget>
@@ -10,10 +11,22 @@
 
 MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
     ui->setupUi(this);
+    ui->imageViewer->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
+    ui->imageViewer->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
+    ui->scrollArea->setFrameShape(QFrame::NoFrame);
 }
 
 MainWindow::~MainWindow() {
     delete ui;
+}
+
+bool MainWindow::getFile(QString file) {
+    if (file != "") {
+        showImage(file);
+        return true;
+    }else {
+        return false;
+    }
 }
 
 void MainWindow::zoomIn() {
@@ -22,7 +35,7 @@ void MainWindow::zoomIn() {
 }
 
 void MainWindow::zoomOut() {
-    zoomImage(0.8);
+    zoomImage(0.87);
     std::cout << "Zoom Out" << std::endl; //Debug function
 }
 
@@ -30,25 +43,30 @@ QString MainWindow::getFilePath() {
     return QFileDialog::getOpenFileName(this, QFileDialog::tr("Open file"), "C:/", QFileDialog::tr("Image Files (*.png *.jpg *.bmp *.jpeg)"));
 }
 
-void MainWindow::showImage() {
-    img = new QPixmap(getFilePath());
-    ui->imageViewer->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
-    ui->imageViewer->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
+void MainWindow::controlScrollBar(QScrollBar* scrollBar, double factor) {
+    scrollBar->setValue(int(factor * scrollBar->value()
+                            + ((factor - 1) * scrollBar->pageStep()/2)));
+}
+
+void MainWindow::showImage(QString filePath) {
+    img = new QPixmap(filePath);
     ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width(), ui->imageViewer->height(), Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
 }
 
 void MainWindow::zoomImage(double factor) {
     scaleFactor *= factor;
     ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width() * scaleFactor, ui->imageViewer->height() * scaleFactor, Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
+    controlScrollBar(ui->scrollArea->horizontalScrollBar(), factor);
+    controlScrollBar(ui->scrollArea->verticalScrollBar(), factor);
 }
 
 void MainWindow::zoomReset() {
     ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width(), ui->imageViewer->height(), Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
-    scaleFactor = 1;
+    scaleFactor = 1.0;
 }
 
 void MainWindow::on_actionOpen_triggered() {
-    showImage();
+    showImage(getFilePath());
 }
 
 void MainWindow::on_actionExit_triggered() {

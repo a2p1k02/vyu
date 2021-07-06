@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QScrollArea>
+#include <QScrollBar>
 #include <QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
@@ -15,14 +17,18 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+    bool getFile(QString file);
 private:
     Ui::MainWindow* ui;
     QString getFilePath();
     QPixmap* img;
+    QScrollArea* scrollArea;
 
     double scaleFactor = 1;
 private slots:
-    void showImage();
+    void showImage(QString filePath);
+    void controlScrollBar(QScrollBar* scrollBar, double factor);
     void zoomImage(double factor);
     void zoomReset();
     void zoomIn();

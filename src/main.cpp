@@ -1,5 +1,6 @@
 #include "vyu/mainwindow.h"
 #include <QApplication>
+#include <QCommandLineParser>
 
 int main(int argc, char *argv[]) {
     QApplication vyu(argc, argv);
@@ -7,6 +8,11 @@ int main(int argc, char *argv[]) {
     QApplication::setApplicationName(QString("vyu"));
     QApplication::setApplicationDisplayName(QString("Image Viewer"));
     QApplication::setApplicationVersion(QString("0.5"));
+
+    QCommandLineParser commandLineParser;
+    commandLineParser.addHelpOption();
+    commandLineParser.addPositionalArgument(MainWindow::tr("[file]"), MainWindow::tr("Image file to open"));
+    commandLineParser.process(QCoreApplication::arguments());
 
     QIcon icon;
     icon.addFile(QString(":/app/icon/src/vyu/icon/eye.svg"), QSize(16, 16));
@@ -26,6 +32,9 @@ int main(int argc, char *argv[]) {
 #endif
 
     MainWindow vyu_window;
+    if (!commandLineParser.positionalArguments().isEmpty() && !vyu_window.getFile(commandLineParser.positionalArguments().front()))
+        return -1;
+
     vyu_window.show();
     return vyu.exec();
 }
