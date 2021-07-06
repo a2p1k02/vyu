@@ -10,6 +10,16 @@ Hopefully this application will become a standard application in your practice.
 2. Build project: ```mkdir build && cd build && cmake .. && make```
 3. Execute: ```./vyu```
 
+## Shortcuts:
+| Action        | Shortcut      | 
+| ------------- |:-------------:| 
+| Open File     | Ctrl + N      |
+| Exit          | Ctrl + Q      |
+| Zoom In       | Ctrl + =      |
+| Zoom Out      | Ctrl + -      |
+| Zoom Reset    | Ctrl + r      |
+| About vyu     | Ctrl + /      |
+
 ## Screenshots
 ***Start screen***
 <br>
