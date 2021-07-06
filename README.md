@@ -19,4 +19,3 @@ Hopefully this application will become a standard application in your practice.
 ***Vyu after open picture***
 <br>
 ![изображение](https://user-images.githubusercontent.com/35633190/124517560-f1949900-ddec-11eb-86a9-3f9c4b6c12bc.png)
-<br>
