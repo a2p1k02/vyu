@@ -1,4 +1,7 @@
 #include "vyu/mainwindow.h"
+#ifdef _WIN32
+    #include <Windows.h>
+#endif
 #include <QApplication>
 #include <QStyle>
 #include <QCommandLineParser>
@@ -28,12 +31,11 @@ int main(int argc, char *argv[]) {
     vyu.setWindowIcon(icon);
 
 #ifdef _WIN32
-    #include <Windows.h>
     FreeConsole();
 #endif
 
     MainWindow vyu_window;
-    if (!commandLineParser.positionalArguments().isEmpty() && !vyu_window.getFile(commandLineParser.positionalArguments().front()))
+    if (!commandLineParser.positionalArguments().isEmpty() && !vyu_window.getFile(commandLineParser.positionalArguments()[1]))
         return -1;
 
     vyu_window.show();

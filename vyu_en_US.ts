@@ -5,114 +5,100 @@
     <name>MainWindow</name>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="14"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="123"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="96"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="123"/>
         <source>vyu</source>
         <translation>vyu</translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="107"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="124"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="97"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="124"/>
         <source>Open...</source>
         <translation>Open...</translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="131"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="136"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="109"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="136"/>
         <source>Zoom Out</source>
         <oldsource>ZoomOut</oldsource>
         <translation type="unfinished">Zoom Out</translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="123"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="132"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="105"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="132"/>
         <source>Zoom In</source>
         <oldsource>ZoomIn</oldsource>
         <translation type="unfinished">Zoom In</translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="82"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="149"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="118"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="149"/>
         <source>File</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="89"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="150"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="119"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="150"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="97"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="151"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="120"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="151"/>
         <source>Help</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="110"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="126"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="99"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="126"/>
         <source>Ctrl+N</source>
         <oldsource>Ctrl + N</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="118"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="130"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="103"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="130"/>
         <source>Ctrl+Q</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="126"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="134"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="107"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="134"/>
         <source>Ctrl+=</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="134"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="138"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="111"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="138"/>
         <source>Ctrl+-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="139"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="140"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="113"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="140"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="142"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="142"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="115"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="142"/>
         <source>Ctrl+/</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="147"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="144"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="144"/>
         <source>Zoom Reset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="150"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="146"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="146"/>
         <source>Ctrl+R</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="src/vyu/mainwindow.ui" line="115"/>
-        <location filename="build/Debug/vyu_autogen/include/ui_mainwindow.h" line="128"/>
-        <location filename="build/Release/vyu_autogen/include/ui_mainwindow.h" line="101"/>
+        <location filename="build/vyu_autogen/include/ui_mainwindow.h" line="128"/>
         <source>Exit</source>
         <translation>Exit</translation>
     </message>
