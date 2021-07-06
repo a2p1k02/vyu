@@ -29,14 +29,11 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets LinguistTools REQUIRED)
 
 qt5_add_resources(VYU_RESOURCES resources.qrc)
 
-set(TS_FILES vyu_en_US.ts vyu_ru_RU.ts)
-
 set(PROJECT_SOURCES
         src/main.cpp
         src/vyu/mainwindow.cpp
         src/vyu/mainwindow.h
         src/vyu/mainwindow.ui
-        ${TS_FILES}
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -44,7 +41,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
     )
 
-    qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
+    qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR})
 else()
     if(ANDROID)
         add_library(vyu SHARED ${PROJECT_SOURCES})
@@ -52,7 +49,7 @@ else()
         add_executable(vyu ${PROJECT_SOURCES} ${VYU_RESOURCES})
     endif()
 
-    qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} ${TS_FILES})
+    qt5_create_translation(QM_FILES ${CMAKE_SOURCE_DIR})
 endif()
 
 target_link_libraries(vyu PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
