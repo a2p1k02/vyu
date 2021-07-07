@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
 #endif
 
     MainWindow vyu_window;
-    if (!commandLineParser.positionalArguments().isEmpty() && !vyu_window.getFile(commandLineParser.positionalArguments()[1]))
+    if (!commandLineParser.positionalArguments().isEmpty() && !vyu_window.getFile(commandLineParser.positionalArguments().front()))
         return -1;
 
     vyu_window.show();
