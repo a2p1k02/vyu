@@ -40,7 +40,8 @@ void MainWindow::zoomOut() {
 }
 
 QString MainWindow::getFilePath() {
-    return QFileDialog::getOpenFileName(this, QFileDialog::tr("Open file"), "C:/", QFileDialog::tr("Image Files (*.png *.jpg *.bmp *.jpeg)"));
+    return QFileDialog::getOpenFileName(this, QFileDialog::tr("Open file"), "C:/",
+                                        QFileDialog::tr("Image Files (*.png *.jpg *.bmp *.jpeg)"));
 }
 
 void MainWindow::controlScrollBar(QScrollBar* scrollBar, double factor) {
@@ -50,18 +51,21 @@ void MainWindow::controlScrollBar(QScrollBar* scrollBar, double factor) {
 
 void MainWindow::showImage(QString filePath) {
     img = new QPixmap(filePath);
-    ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width(), ui->imageViewer->height(), Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
+    ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width(), ui->imageViewer->height(),
+                                           Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
 }
 
 void MainWindow::zoomImage(double factor) {
     scaleFactor *= factor;
-    ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width() * scaleFactor, ui->imageViewer->height() * scaleFactor, Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
+    ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width() * scaleFactor, ui->imageViewer->height() * scaleFactor,
+                                           Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
     controlScrollBar(ui->scrollArea->horizontalScrollBar(), factor);
     controlScrollBar(ui->scrollArea->verticalScrollBar(), factor);
 }
 
 void MainWindow::zoomReset() {
-    ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width(), ui->imageViewer->height(), Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
+    ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width(), ui->imageViewer->height(),
+                                           Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
     scaleFactor = 1.0;
 }
 
@@ -86,6 +90,8 @@ void MainWindow::on_actionZoom_Reset_triggered() {
 }
 
 void MainWindow::on_actionAbout_triggered() {
-    QMessageBox::about(this, tr("About vyu"), tr("<p><center>Vyu is Open Source lightweight image viewer was made with GPL V3 License by a2p1k02</center></p><br><a link href='https://github.com/a2p1k02/vyu'><center>Source Code</center></a>"));
+    QMessageBox::about(this, tr("About vyu"),
+                       tr("<p><center>Vyu is Open Source lightweight image viewer was made with GPL V3 License by a2p1k02"
+                          "</center></p><br><a link href='https://github.com/a2p1k02/vyu'><center>Source Code</center></a>"));
 }
 
