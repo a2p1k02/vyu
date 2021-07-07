@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QScrollArea>
 #include <QScrollBar>
 #include <QVBoxLayout>
 
@@ -23,12 +22,10 @@ private:
     Ui::MainWindow* ui;
     QString getFilePath();
     QPixmap* img;
-    QScrollArea* scrollArea;
 
     double scaleFactor = 1;
 private slots:
     void showImage(QString filePath);
-    void controlScrollBar(QScrollBar* scrollBar, double factor);
     void zoomImage(double factor);
     void zoomReset();
     void zoomIn();

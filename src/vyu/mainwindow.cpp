@@ -13,7 +13,6 @@ MainWindow::MainWindow(QWidget* parent) : QMainWindow(parent), ui(new Ui::MainWi
     ui->setupUi(this);
     ui->imageViewer->setAlignment(Qt::AlignHCenter | Qt::AlignVCenter);
     ui->imageViewer->setSizePolicy(QSizePolicy::Ignored, QSizePolicy::Ignored);
-    ui->scrollArea->setFrameShape(QFrame::NoFrame);
 }
 
 MainWindow::~MainWindow() {
@@ -44,11 +43,6 @@ QString MainWindow::getFilePath() {
                                         QFileDialog::tr("Image Files (*.png *.jpg *.bmp *.jpeg)"));
 }
 
-void MainWindow::controlScrollBar(QScrollBar* scrollBar, double factor) {
-    scrollBar->setValue(int(factor * scrollBar->value()
-                            + ((factor - 1) * scrollBar->pageStep()/2)));
-}
-
 void MainWindow::showImage(QString filePath) {
     img = new QPixmap(filePath);
     ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width(), ui->imageViewer->height(),
@@ -59,8 +53,6 @@ void MainWindow::zoomImage(double factor) {
     scaleFactor *= factor;
     ui->imageViewer->setPixmap(img->scaled(ui->imageViewer->width() * scaleFactor, ui->imageViewer->height() * scaleFactor,
                                            Qt::KeepAspectRatio, Qt::TransformationMode::SmoothTransformation));
-    controlScrollBar(ui->scrollArea->horizontalScrollBar(), factor);
-    controlScrollBar(ui->scrollArea->verticalScrollBar(), factor);
 }
 
 void MainWindow::zoomReset() {
