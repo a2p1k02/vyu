@@ -1,9 +1,7 @@
 # Vyu is crossplatform lightweight Image Viewer
 
-## Lyrics:
-I wrote this application because I was not happy with the performance of the "photography" application on Windows 10. <br>
-I used my little knowledge of C++ and Qt. <br>
-Hopefully this application will become a standard application in your practice.
+## Description:
+Previously, it was a replacement for the standard Photo app from Windows 10, but I revisited the concept and now it is a cross-platform photo viewer application written under the GPL V3 license.
 
 ## How to build:
 1. Install Qt5 (ex. for Arch Linux ```sudo pacman -S qt5```
