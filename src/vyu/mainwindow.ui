@@ -97,9 +97,6 @@
      <string>Help</string>
     </property>
     <addaction name="actionAbout"/>
-    <addaction name="separator"/>
-    <addaction name="actionSet_Russin"/>
-    <addaction name="actionSet_English"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
