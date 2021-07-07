@@ -23,8 +23,9 @@ Hopefully this application will become a standard application in your practice.
 ## Screenshots
 ***Start screen***
 <br>
-![изображение](https://user-images.githubusercontent.com/35633190/124517539-e2155000-ddec-11eb-82a1-c61c693bcf4b.png)
+![Screenshot_20210707_100339](https://user-images.githubusercontent.com/35633190/124715058-357dc000-df0b-11eb-936d-655fe30a9eb6.png)
 <br>
 ***Vyu after open picture***
+![Screenshot_20210707_100407](https://user-images.githubusercontent.com/35633190/124715067-39a9dd80-df0b-11eb-85ef-df853caa0082.png)
 <br>
-![изображение](https://user-images.githubusercontent.com/35633190/124517560-f1949900-ddec-11eb-86a9-3f9c4b6c12bc.png)
+
