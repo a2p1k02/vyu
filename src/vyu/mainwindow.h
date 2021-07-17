@@ -9,8 +9,7 @@ QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
-{
+class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
@@ -37,4 +36,5 @@ private slots:
     void on_actionAbout_triggered();
     void on_actionZoom_Reset_triggered();
 };
+
 #endif // MAINWINDOW_H
