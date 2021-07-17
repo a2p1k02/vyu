@@ -7,8 +7,7 @@
     #include <Windows.h>
 #endif
 
-
-int main(int argc, char *argv[]) 
+int main(int argc, char* argv[]) 
 {
     QApplication vyu(argc, argv);
 
